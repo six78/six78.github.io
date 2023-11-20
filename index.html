@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>six78</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+3:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+    html {
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    a {
+      color: #d93711 !important;
+      text-decoration: none !important;
+    }
+
+    p {
+      font-size: 2em;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    p.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="main">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <a href="https://band.link/six78">
+      <span>six</span>
+      <span>7</span>
+      <span>8</span>
+    </a>
+
+    <span>9</span>
+  </p>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById('main').classList.add('visible');
+  });
+</script>
+
+</html>
